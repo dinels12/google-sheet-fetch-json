@@ -45,8 +45,7 @@
     }
   ],
   "repository": {
-    "type": "",
-    "url": "https://github.com/dinels12/google-sheet-fetch-json"
+    "url": "git://github.com/dinels12/google-sheet-fetch-json.git"
   },
   "bugs": {
     "email": "dinels12@gmail.com",
@@ -61,6 +60,9 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
     "typescript": "^4.4.4"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
     "axios": "^0.24.0"
