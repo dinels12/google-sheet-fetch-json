@@ -17,7 +17,7 @@ const fetchData = async (url: string): Promise<any> => {
   });
 };
 
-const getData = async (url: string) => {
+const getData = async (url: string): Promise<any[]> => {
   return await new Promise(async (resolve, reject) => {
     try {
       if (!url) return reject('The url is necessary');
