@@ -37,7 +37,7 @@ const getData = async (url: string) => {
         let obj: any = {};
         for (let c = 0; c < fila.length; c++) {
           const celda = fila[c];
-          if (f == 0) {
+          if (f === 0) {
             campos.push(celda);
           } else {
             obj[campos[c]] = celda;

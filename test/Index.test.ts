@@ -1,4 +1,4 @@
-import getData from '../src';
+import getDataFromSheetURL from '../src';
 
 /**
  *
@@ -13,7 +13,7 @@ const sheet_url = process.env.SHEET_URL as string;
 
 describe('GET a ARRAY of data from Google Sheets', () => {
   it('is array containing the values from the url sheet', async () => {
-    const data = await getData(sheet_url);
+    const data = await getDataFromSheetURL(sheet_url);
     expect(data).toBeInstanceOf(Array);
   });
 });
